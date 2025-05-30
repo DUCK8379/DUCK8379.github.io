@@ -8,7 +8,7 @@
       <link href="/2025/05/30/brick/"/>
       <url>/2025/05/30/brick/</url>
       
-        <content type="html"><![CDATA[<h1 id="打砖块"><a href="#打砖块" class="headerlink" title="打砖块"></a><strong>打砖块</strong></h1><p>🚫未经作者允许，严禁转载。关于版权有关说明，请见<strong><a href="https://duck8379.github.io/2025/01/22/My-First-Post">https://duck8379.github.io/2025/01/22/My-First-Post</a></strong>或<strong><a href="https://ducks-game.pages.dev/2025/01/22/My-First-Post">https://ducks-game.pages.dev/2025/01/22/My-First-Post</a></strong>。</p><h3 id="html游戏"><a href="#html游戏" class="headerlink" title="html游戏"></a><strong>html游戏</strong></h3><p><link rel="stylesheet" href="/css/custom.css"></p><script src="/js/cursor.js"></script><!-- 动态加载 HTML --><p><div id="html"></div></p><script>    fetch('/html/brick.html')        .then(response => response.text())        .then(html => document.getElementById('html').innerHTML = html);</script>]]></content>
+        <content type="html"><![CDATA[<h1 id="打砖块"><a href="#打砖块" class="headerlink" title="打砖块"></a><strong>打砖块</strong></h1><p>🚫未经作者允许，严禁转载。关于版权有关说明，请见<strong><a href="https://duck8379.github.io/2025/01/22/My-First-Post">https://duck8379.github.io/2025/01/22/My-First-Post</a></strong>或<strong><a href="https://ducks-game.pages.dev/2025/01/22/My-First-Post">https://ducks-game.pages.dev/2025/01/22/My-First-Post</a></strong>。</p><h3 id="html游戏"><a href="#html游戏" class="headerlink" title="html游戏"></a><strong>html游戏</strong></h3><h2 id="示例：嵌入外部-HTML"><a href="#示例：嵌入外部-HTML" class="headerlink" title="示例：嵌入外部 HTML"></a>示例：嵌入外部 HTML</h2><iframe src="https://ducks-game.pages.dev/html/brick.html" width="100%" height="500"></iframe>]]></content>
       
       
       <categories>

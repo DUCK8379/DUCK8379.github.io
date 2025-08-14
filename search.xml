@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>信奥算法1 - 输入输出易踩坑</title>
+      <link href="/2025/08/14/coding-1/"/>
+      <url>/2025/08/14/coding-1/</url>
+      
+        <content type="html"><![CDATA[<h1 id="信奥算法1-输入输出易踩坑"><a href="#信奥算法1-输入输出易踩坑" class="headerlink" title="信奥算法1 - 输入输出易踩坑"></a><strong>信奥算法1 - 输入输出易踩坑</strong></h1><p>🚫未经作者允许，严禁转载。关于版权有关说明，请见<strong><a href="https://duck8379.github.io/2025/01/22/My-First-Post">https://duck8379.github.io/2025/01/22/My-First-Post</a></strong>或<strong><a href="https://ducks-game.pages.dev/2025/01/22/My-First-Post">https://ducks-game.pages.dev/2025/01/22/My-First-Post</a></strong>。</p><h3 id="声明"><a href="#声明" class="headerlink" title="声明"></a><strong>声明</strong></h3><p>本文代码全为C++语言，为C++14标准。</p><h3 id="scanf-printf踩坑点"><a href="#scanf-printf踩坑点" class="headerlink" title="scanf/printf踩坑点"></a><strong>scanf/printf踩坑点</strong></h3><p>如果你使用这行代码<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">scanf</span>(<span class="string">&quot;%c&quot;</span>,c);</span><br></pre></td></tr></table></figure><br>读入一个字符，但是这时程序崩溃，我将为你提供一个抢救措施，你可以试试这段代码：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">char</span> c[<span class="number">5</span>];</span><br><span class="line"><span class="built_in">scanf</span>(<span class="string">&quot;%s&quot;</span>,c); <span class="comment">//这时如果你想访问这个字符，可以访问c[0]</span></span><br></pre></td></tr></table></figure></p><h3 id="cin-cout踩坑点"><a href="#cin-cout踩坑点" class="headerlink" title="cin/cout踩坑点"></a><strong>cin/cout踩坑点</strong></h3><p>你可能习惯使用cin和cout进行输入输出，但如果题目读写数据量过大，可能面临超时的风险，你可以在读写代码前加入这段代码（只需要加1次）：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ios_base::<span class="built_in">sync_with_stdio</span>(<span class="literal">false</span>); </span><br><span class="line">cin.<span class="built_in">tie</span>(<span class="literal">nullptr</span>);</span><br><span class="line">cout.<span class="built_in">tie</span>(<span class="literal">nullptr</span>);</span><br></pre></td></tr></table></figure><br>当然，你还可以将endl换行代码换成换行符”\n”，比如我想打印数字“0”，你可以这么做：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cout &lt;&lt; <span class="number">0</span> &lt;&lt; endl; <span class="comment">//这是原本的代码</span></span><br><span class="line">cout &lt;&lt; <span class="number">0</span> &lt;&lt; <span class="string">&quot;\n&quot;</span>; <span class="comment">//这是新的代码</span></span><br></pre></td></tr></table></figure></p><h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a><strong>总结</strong></h3><p>好了，这就是今天我分享的易踩坑点，希望大家理解吸收！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 信奥 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 原创 </tag>
+            
+            <tag> 信奥 </tag>
+            
+            <tag> 笔记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>谷歌小恐龙扩展版</title>
       <link href="/2025/07/18/dino/"/>
       <url>/2025/07/18/dino/</url>
@@ -20,9 +49,9 @@
       
         <tags>
             
-            <tag> 下载 </tag>
-            
             <tag> 原创 </tag>
+            
+            <tag> 下载 </tag>
             
             <tag> 改版 </tag>
             
@@ -49,9 +78,9 @@
       
         <tags>
             
-            <tag> 下载 </tag>
-            
             <tag> 原创 </tag>
+            
+            <tag> 下载 </tag>
             
         </tags>
       
@@ -76,9 +105,9 @@
       
         <tags>
             
-            <tag> 下载 </tag>
-            
             <tag> 原创 </tag>
+            
+            <tag> 下载 </tag>
             
         </tags>
       
@@ -157,9 +186,9 @@
       
         <tags>
             
-            <tag> 下载 </tag>
-            
             <tag> 原创 </tag>
+            
+            <tag> 下载 </tag>
             
             <tag> 游戏 </tag>
             
@@ -186,9 +215,9 @@
       
         <tags>
             
-            <tag> 下载 </tag>
-            
             <tag> 原创 </tag>
+            
+            <tag> 下载 </tag>
             
         </tags>
       
@@ -213,9 +242,9 @@
       
         <tags>
             
-            <tag> 下载 </tag>
-            
             <tag> 原创 </tag>
+            
+            <tag> 下载 </tag>
             
         </tags>
       
@@ -265,11 +294,11 @@
       
         <tags>
             
-            <tag> 原创 </tag>
-            
             <tag> 数学 </tag>
             
             <tag> 技巧 </tag>
+            
+            <tag> 原创 </tag>
             
         </tags>
       
